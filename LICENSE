@@ -1,0 +1,5 @@
+Copyright (c) 2026 shoplab GmbH. All rights reserved.
+
+Proprietary. You may use this action in GitHub Actions workflows to run tests on ForgeQA
+(https://forgeqa.io). Any other use, copying, modification or distribution requires written
+permission from shoplab GmbH.

@@ -1,0 +1,24 @@
+name: ForgeQA
+description: Trigger a ForgeQA test or suite and wait for its result.
+author: ForgeQA
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  trigger-url:
+    description: Scoped trigger URL from ForgeQA (Professional or Agency).
+    required: true
+  webhook-key:
+    description: Scoped webhook key, supplied through a GitHub Actions secret.
+    required: true
+  timeout-seconds:
+    description: Maximum time to wait; running tests continue if CI times out.
+    default: '1800'
+outputs:
+  execution-id:
+    description: ForgeQA execution identifier.
+  status:
+    description: Final execution status.
+runs:
+  using: node24
+  main: index.mjs
